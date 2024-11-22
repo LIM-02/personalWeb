@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Professional resume website showcasing my skills, projects, and experience in software engineering.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Software Engineer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- AOS Library for animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header id="home">
+    <nav>
+      <div class="logo">
+        <a href="#home">Your Logo</a>
+      </div>
+      <!-- Desktop Navigation -->
+      <ul class="nav-links-desktop">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Mobile Navigation Menu Toggle -->
+      <div class="menu-toggle" aria-label="Toggle navigation menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Menu -->
+  <ul class="mobile-nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Your Name</h1>
+      <p>Software Engineer | Passionate Learner | Tech Enthusiast</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="about">
+    <h2 data-aos="fade-up">About Me</h2>
+    <div class="about-content container" data-aos="fade-up">
+      <img src="images/your-photo.jpg" alt="Your Photo">
+      <p>Hello! I'm a software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success. I have experience in various programming languages and am always eager to learn new technologies.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2 data-aos="fade-up">Skills</h2>
+    <div class="skills-content container">
+      <!-- Technical Skills -->
+      <div class="skill-category" data-aos="fade-right">
+        <h3>Technical Skills</h3>
+        <ul class="skill-list">
+          <li>
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+          </li>
+          <li>
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+          </li>
+          <li>
+            <i class="fab fa-js-square"></i>
+            <span>JavaScript</span>
+          </li>
+          <!-- Add more skills with icons -->
+        </ul>
+      </div>
+      <!-- Soft Skills -->
+      <div class="skill-category" data-aos="fade-left">
+        <h3>Soft Skills</h3>
+        <ul class="skill-list">
+          <li>
+            <i class="fas fa-comments"></i>
+            <span>Communication</span>
+          </li>
+          <li>
+            <i class="fas fa-users"></i>
+            <span>Teamwork</span>
+          </li>
+          <!-- Add more soft skills -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2 data-aos="fade-up">Projects</h2>
+    <div class="projects-content container">
+      <!-- Project Item -->
+      <div class="project-item" data-aos="zoom-in">
+        <img src="images/project1.jpg" alt="Project 1">
+        <div class="project-info">
+          <h3>Project Title 1</h3>
+          <p>Brief description of the project highlighting objectives and outcomes.</p>
+          <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+          <a href="https://github.com/yourusername/project1" target="_blank">GitHub Repo</a>
+          <a href="https://live-demo-link.com" target="_blank">Live Demo</a>
+        </div>
+      </div>
+      <!-- Add more project items -->
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience">
+    <h2 data-aos="fade-up">Experience</h2>
+    <div class="experience-content container">
+      <!-- Experience Item -->
+      <div class="experience-item" data-aos="fade-right">
+        <h3>Software Engineer Intern</h3>
+        <h4>Company Name | June 2022 - August 2022</h4>
+        <ul>
+          <li>Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery.</li>
+          <li>Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness.</li>
+          <!-- Add more responsibilities -->
+        </ul>
+      </div>
+      <!-- Add more experience items -->
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="education">
+    <h2 data-aos="fade-up">Education</h2>
+    <div class="education-content container">
+      <div class="education-item" data-aos="fade-left">
+        <h3>Bachelor of Engineering (Software)</h3>
+        <h4>Monash University Malaysia | 2019 - 2023</h4>
+        <p>Relevant Coursework: Data Structures, Algorithms, Database Systems, Software Project Management.</p>
+        <!-- Add more details if necessary -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2 data-aos="fade-up">Contact Me</h2>
+    <div class="contact-content container" data-aos="fade-up">
+      <p>If you'd like to discuss opportunities or have any questions, feel free to reach out!</p>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">LinkedIn Profile</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></p>
+      </div>
+      <!-- Contact Form -->
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+    <a href="documents/your-resume.pdf" class="btn" download>Download Resume</a>
+  </footer>
+
+  <!-- JavaScript -->
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <!-- AOS Library for animations -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Your JavaScript file -->
+  <script src="js/script.js"></script>
+</body>
+</html>
