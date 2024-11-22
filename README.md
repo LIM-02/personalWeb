@@ -1,1 +1,2 @@
 # personalWeb
+This is a personal website project that I am working on. It is a simple website that will contain information about me, my projects, and my resume. I am using HTML, CSS, and JavaScript to create this website. I am also using Bootstrap to help with the layout and design of the website. I am using GitHub Pages to host the website. I will be updating this website as I learn more about web development and as I complete more projects. I hope you enjoy the website!
