@@ -46,37 +46,22 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Your Name</h1>
-      <p>Software Engineer | Passionate Learner | Tech Enthusiast</p>
-      <a href="#contact" class="btn">Get in Touch</a>
-    </div>
-  </section>
-
-  <!-- About Me -->
   <section id="about" class="about">
-    <h2 data-aos="fade-up">About Me</h2>
-    <div class="about-content container" data-aos="fade-up">
-      <img src="images/your-photo.jpg" alt="Your Photo">
-      <p>Hello! I'm a software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success. I have experience in various programming languages and am always eager to learn new technologies.</p>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="skills">
-    <h2 data-aos="fade-up">Skills</h2>
-    <div class="skills-content container">
-      <!-- Technical Skills -->
-      <div class="skill-category" data-aos="fade-right">
-        <h3>Technical Skills</h3>
-        <ul class="skill-list" id="technical-skills"></ul>
-      </div>
-      <!-- Soft Skills -->
-      <div class="skill-category" data-aos="fade-left">
-        <h3>Soft Skills</h3>
-        <ul class="skill-list" id="soft-skills"></ul>
+    <div class="container about-content" data-aos="fade-up">
+      <div class="about-card">
+        <div class="about-photo" data-aos="zoom-in">
+          <img src="images/photo.jpg" alt="Your Photo">
+        </div>
+        <div class="about-text" data-aos="fade-left">
+          <h2>Lim Zhi Cheng</h2>
+          <p>
+            Hello! I'm a <strong>software engineer</strong> passionate about creating innovative solutions that drive efficiency and organizational success. With experience in various programming languages and a constant curiosity for new technologies, I aim to develop impactful and reliable applications.
+          </p>
+          <p>
+            My expertise includes full-stack web development, data visualization, and game development. I thrive in collaborative environments, always eager to solve complex challenges while enhancing my skills and knowledge.
+          </p>
+          <a href="#projects" class="btn">Explore My Projects</a>
+        </div>
       </div>
     </div>
   </section>
@@ -115,7 +100,7 @@
           </p>
           <p>
             I was responsible for every aspect of this project, including designing the user interface, implementing interactive 
-            visualizations using <strong>Vega-Lite</strong> and <strong>D3.js</strong>, and ensuring seamless integration of datasets 
+            visualizations using <strong >Vega-Lite</strong> and <strong>D3.js</strong>, and ensuring seamless integration of datasets 
             from CSV and JSON files. I also handled the deployment of the web application and created detailed documentation for users.
           </p>
           <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Vega-Lite, D3.js, GitHub Pages</p>
@@ -159,20 +144,55 @@
     </div>
   </section>
 
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <h2 data-aos="fade-up">Skills</h2>
+      <div class="skills-content container">
+        <!-- Technical Skills -->
+        <div class="skill-category" data-aos="fade-right">
+          <h3>Technical Skills</h3>
+          <ul class="skill-list" id="technical-skills"></ul>
+        </div>
+        <!-- Soft Skills -->
+        <div class="skill-category" data-aos="fade-left">
+          <h3>Soft Skills</h3>
+          <ul class="skill-list" id="soft-skills"></ul>
+        </div>
+      </div>
+    </section>
+
   <!-- Experience -->
 
   <!-- Education -->
-  <section id="education" class="education">
-    <h2 data-aos="fade-up">Education</h2>
-    <div class="education-content container">
-      <div class="education-item" data-aos="fade-left">
+  <section id="education-and-languages" class="education-languages">
+    <div class="container">
+      <!-- Education Section -->
+      <div class="card education" data-aos="fade-right">
+        <h2>Education</h2>
         <h3>Bachelor of Engineering (Software)</h3>
-        <h4>Monash University Malaysia | 2022 - present</h4>
-        <p>Relevant Coursework: Data Structures & Algorithms, Database Systems, Software Project Management, Web Development, PC game development</p>
-        <!-- Add more details if necessary -->
+        <p><strong>Monash University Malaysia</strong> | 2022 - present</p>
+        <p>Relevant Coursework:</p>
+        <ul>
+          <li>Data Structures & Algorithms</li>
+          <li>Database Systems</li>
+          <li>Software Project Management</li>
+          <li>Web Development</li>
+          <li>PC Game Development</li>
+        </ul>
+      </div>
+  
+      <!-- Languages Section -->
+      <div class="card languages" data-aos="fade-left">
+        <h2>Languages</h2>
+        <ul>
+          <li>English (Fluent)</li>
+          <li>Chinese (Mandarin, Fluent)</li>
+          <li>Malay (Intermediate)</li>
+        </ul>
       </div>
     </div>
   </section>
+  
 
   <!-- Contact -->
   <section id="contact" class="contact">

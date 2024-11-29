@@ -43,25 +43,44 @@ navDesktopItems.forEach(item => {
 });
 
 // Initialize EmailJS
-(function(){
-  emailjs.init('YOUR_EMAILJS_USER_ID'); // Replace with your EmailJS user ID
+(function () {
+  emailjs.init('EwlyDE3Zq9AuA7_W'); // Replace with your actual Public Key (User ID)
 })();
 
 // Contact Form Submission using EmailJS
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+document.getElementById('contact-form').addEventListener('submit', function (event) {
   event.preventDefault();
 
-  // Send the form data
-  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-    .then(function() {
-      alert('Message sent successfully!');
-    }, function(error) {
-      alert('Failed to send message. Please try again.');
-    });
+  const form = this;
+
+  // Send email to you
+  emailjs
+    .sendForm('service_alm7gnn', 'template_cpmosdg', form) // Replace 'template_to_me' with your Template ID for yourself
+    .then(
+      function () {
+        console.log('Email sent to me successfully!');
+      },
+      function (error) {
+        console.error('Failed to send email to me.', error);
+      }
+    );
+
+  // Send acknowledgment email to the user
+  emailjs
+    .sendForm('service_alm7gnn', 'template_iezcy9t', form) // Replace 'template_acknowledgment' with the Template ID for acknowledgment
+    .then(
+      function () {
+        alert('Message sent successfully! An acknowledgment has been sent to your email.');
+      },
+      function (error) {
+        alert('Failed to send acknowledgment. Please try again.');
+      }
+    );
 
   // Reset the form
-  this.reset();
+  form.reset();
 });
+
 
 // Define skills as objects with their name and icon class
 const hardSkills = [
@@ -69,13 +88,12 @@ const hardSkills = [
   { name: "CSS3", icon: "fab fa-css3-alt" },
   { name: "JavaScript", icon: "fab fa-js-square" },
   { name: "Python", icon: "fab fa-python" },
-  { name: "SQL (MySQL, PostgreSQL)", icon: "fas fa-database" },
+  { name: "SQL (MySQL, Oracle)", icon: "fas fa-database" },
   { name: "Node.js", icon: "fab fa-node-js" },
   { name: "Vega-Lite & D3.js", icon: "fas fa-project-diagram" },
   { name: "Data Visualization", icon: "fas fa-chart-line" },
   { name: "Version Control (Git/GitHub)", icon: "fab fa-github" },
   { name: "Cloud Computing (Alibaba Cloud)", icon: "fas fa-cloud" },
-  { name: "Docker", icon: "fab fa-docker" },
   { name: "FastAPI", icon: "fas fa-code" },
 ];
 
