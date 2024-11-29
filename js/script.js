@@ -44,7 +44,7 @@ navDesktopItems.forEach(item => {
 
 // Initialize EmailJS
 (function () {
-  emailjs.init('EwlyDE3Zq9AuA7_W'); // Replace with your actual Public Key (User ID)
+  emailjs.init('EwlyDE3Z9qA9uA7_W'); // Replace with your actual Public Key (User ID)
 })();
 
 // Contact Form Submission using EmailJS
