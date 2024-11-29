@@ -55,24 +55,25 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
 
   // Send email to you
   emailjs
-    .sendForm('service_alm7gnn', 'template_cpmosdg', form) // Replace 'template_to_me' with your Template ID for yourself
+    .sendForm('service_alm7gnn', 'template_cpmosdg', form) // Replace with your Template ID for yourself
     .then(
       function () {
-        console.log('Email sent to me successfully!');
+        console.log('Email sent to you successfully!');
       },
       function (error) {
-        console.error('Failed to send email to me.', error);
+        console.error('Failed to send email to you.', error);
       }
     );
 
   // Send acknowledgment email to the user
   emailjs
-    .sendForm('service_alm7gnn', 'template_iezcy9t', form) // Replace 'template_acknowledgment' with the Template ID for acknowledgment
+    .sendForm('service_alm7gnn', 'template_iezcy9t', form) // Replace with the Template ID for acknowledgment
     .then(
       function () {
         alert('Message sent successfully! An acknowledgment has been sent to your email.');
       },
       function (error) {
+        console.error('Failed to send acknowledgment email.', error);
         alert('Failed to send acknowledgment. Please try again.');
       }
     );
